@@ -3,8 +3,10 @@ import Details from './Details'
 
 export default function First(){
     const [isVisible, setIsVisible] = useState(true);
+    const [first, setFirst] = useState('');
 
     function buttonClick() {
+        //alert(`Your answer is "${first}"`)
         setIsVisible(false);
     }
 
@@ -20,9 +22,13 @@ export default function First(){
                 type="text" 
                 className="qOne" 
                 id="qCapital" 
-                placeholder="Answer" />
+                placeholder="Answer"
+                onChange={(event) => {setFirst(event.target.value)}} />
 
-            <button className="next" onClick={() => {console.log({name})}}>Next</button>
+            <button 
+                className="next"
+                onClick={buttonClick}
+                >Next</button>
         </div>
     )
 }
