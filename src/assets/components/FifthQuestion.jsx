@@ -1,20 +1,33 @@
-export default function Fifth() {
+import { useState } from 'react'
+
+export default function fifth() {
+    const [isVisible, setIsVisible] = useState(true);
+    const [fifth, setFifth] = useState('');
+    
+    function buttonClick() {
+        //alert(`Your answer is "${fifth}"`)
+        setIsVisible(false);
+    }
+    
+    if(!isVisible) {
+        return null;
+    }
+    
     return(
-        <>
-                <div id="fifth" className="hidden">
-                    <div id="qFiveDiv">
-                        <div className="qFive">
-                            <h3>How many days are in a leap year?</h3>
-                        </div>
-                        <div className="qFive">
-                            <input type="text" className="qFive" id="qLeap"
-                                placeholder="Answer" />
-                        </div>
-                        <div className="qFive">
-                            <button className="next">Next</button>
-                        </div>
-                    </div>
-                </div>
-        </>
+            <div className="fifth-wrapper">
+                <h3>How many days are in a leap year?</h3>
+        
+                <input 
+                    type="text" 
+                    className="qOne" 
+                    id="qCapital" 
+                    placeholder="Answer"
+                    onChange={(event) => {setFifth(event.target.value)}} />
+        
+                <button 
+                    className="next"
+                    onClick={buttonClick}
+                    >Next</button>
+            </div>
     )
 }
