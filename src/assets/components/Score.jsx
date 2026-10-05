@@ -1,18 +1,14 @@
+import { useState } from 'react'
+
 export default function Score() {
+    const [score, setScore] = useState(0)
+
     return(
-        <>
-                <div id="score" className="hidden">
-                    <div id="scoreDiv">
-                        <div className="score">
-                            <h2>Your score is : </h2>
-                        </div>
-                        <b>
-                        <div className="score" id="scoress">
-                            
-                        </div>
-                        </b>
-                    </div>
-                </div>
-        </>
+        <div className="score-wrapper">
+            <h2>Your score is : </h2>
+
+            <p>{score}</p>
+        </div>
     )
 }
+

@@ -184,37 +184,33 @@ div#scoreDiv {
 
 
 
-/* details */
 
-.details-wrapper {
+/*  */
+
+.details-wrapper,
+.first-wrapper,
+.second-wrapper,
+.third-wrapper,
+.fourth-wrapper,
+.fifth-wrapper,
+.score-wrapper {
     display: flex;
     flex-direction: column;
 
-    margin: 10px;
+    padding: 10px;
+    background-color: cyan;
 }
 
 .details-wrapper > * {
     align-self: center;
 }
 
-/* questions */
-
-.first-wrapper,
-.second-wrapper,
-.third-wrapper,
-.fourth-wrapper,
-.fifth-wrapper {
-    display: flex;
-    flex-direction: column;
-
-    margin: 10px;
-}
-
 .first-wrapper > *,
 .second-wrapper > *,
 .third-wrapper > *,
 .fourth-wrapper > *,
-.fifth-wrapper > * {
+.fifth-wrapper > *,
+.score-wrapper > * {
     align-self: center;
 
     margin-block: 5px;
