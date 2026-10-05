@@ -2,13 +2,15 @@ import { useState } from 'react'
 import '../../index.css'
 
 export default function Details() {
+    const [isVisible, setIsVisible] = useState(true);
     const [name, setName] = useState('');
-    const [gmail, setGmail] = useState('');
+    const [email, setEmail] = useState('');
+
+    if(!isVisible) {
+        return null;
+    }
 
     return(
-        <>
-
-
             <div className='details-wrapper'>
                 <h3>Your Details : </h3>
 
@@ -19,30 +21,19 @@ export default function Details() {
                 /><br />
 
                 <input 
-                    type="text"
-                    placeholder='Gmail' 
-                    onChange={(event) => {setGmail(event.target.value)}}    
+                    type="email"
+                    placeholder='Email' 
+                    onChange={(event) => {setEmail(event.target.value)}}    
                 /><br />
 
-                <button onClick={() =>{alert(`Your gmail: ${gmail}, name: ${name} `)}}>Start</button>
+                <button 
+                    id='button'
+                    onClick={buttonClick}>Start</button>
             </div>
-
-            {/* <div id="details" className=''>
-                <div id="nGSubmitDiv">
-                    <h3 align="center">Your Details : </h3>
-                    <div className="nGSubmit">
-                        <input type="text" className="nGSubmit" id="nGSubmitName"
-                            placeholder="Name" /><br /><br />
-                    </div>
-                    <div className="nGSubmit">
-                        <input type="text" className="nGSubmit"  id="nGSubmitGmail"
-                            placeholder="Gmail" /><br /><br />
-                    </div>
-                    <div className="nGSubmit"> 
-                        <button id="startButton">Start</button>
-                    </div>
-                </div>
-            </div> */}
-        </>
     );
+
+    function buttonClick() {
+        // alert(`Your name is "${name}" and your email is "${email}"`)
+        setIsVisible(false)
+    };
 }
