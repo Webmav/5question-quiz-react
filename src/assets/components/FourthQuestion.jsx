@@ -1,20 +1,33 @@
+import { useState } from 'react'
+
 export default function Fourth() {
+    const [isVisible, setIsVisible] = useState(true);
+    const [fourth, setFourth] = useState('');
+    
+    function buttonClick() {
+        //alert(`Your answer is "${fourth}"`)
+        setIsVisible(false);
+    }
+    
+    if(!isVisible) {
+        return null;
+    }
+    
     return(
-        <>
-                <div id="fourth" className="hidden">
-                    <div id="qFourDiv">
-                        <div className="qFour">
-                            <h3>What color are emeralds?</h3>
-                        </div>
-                        <div className="qFour">
-                            <input type="text" className="qFour" id="qEmerald"
-                                placeholder="Answer" />
-                        </div>
-                        <div className="qFour">
-                            <button className="next">Next</button>
-                        </div>
-                    </div>
-                </div>
-        </>
+            <div className="fourth-wrapper">
+                <h3>What color are emeralds?</h3>
+        
+                <input 
+                    type="text" 
+                    className="qOne" 
+                    id="qCapital" 
+                    placeholder="Answer"
+                    onChange={(event) => {setFourth(event.target.value)}} />
+        
+                <button 
+                    className="next"
+                    onClick={buttonClick}
+                    >Next</button>
+            </div>
     )
 }
