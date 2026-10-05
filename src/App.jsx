@@ -1,117 +1,30 @@
+import Details from './assets/components/Details';
+import First from './assets/components/FirstQuestion';
+import Second from './assets/components/SecondQuestion';
+import Third from './assets/components/ThirdQuestion';
+import Fourth from './assets/components/FourthQuestion';
+import Fifth from './assets/components/FifthQuestion';
+import Score from './assets/components/Score';
+import Footer from './assets/components/Footer';
+
 export default function App() {
   return(
     <>
-    
-        {/* <!-- details --> */}
-                <div id="details">
-                    <div id="nGSubmitDiv">
-                        <h3 align="center">Your Details : </h3>
-                        <div class="nGSubmit">
-                            <input type="text" class="nGSubmit" id="nGSubmitName"
-                                placeholder="Name" /><br /><br />
-                        </div>
-                        <div class="nGSubmit">
-                            <input type="text" class="nGSubmit"  id="nGSubmitGmail"
-                                placeholder="Gmail" /><br /><br />
-                        </div>
-                        <div class="nGSubmit"> 
-                            <button id="startButton">Start</button>
-                        </div>
-                    </div>
-                </div>
-        {/* <!-- first question --> */}
-                <div id="first">
-                    <div id="qOneDiv">
-                        <div class="qOne">
-                            <h3>What is the capital of India?</h3>
-                        </div>
-                        <div class="qOne">
-                            <input type="text" class="qOne" id="qCapital"
-                                placeholder="Answer" />
-                        </div>
-                        <div class="qOne">
-                            <button class="next">Next</button>
-                        </div>
-                    </div>
-                </div>
-        {/* <!-- second question --> */}
-                <div id="second">
-                    <div id="qTwoDiv">
-                        <div class="qTwo">
-                            <h3>What is the largest planet in our solar system?</h3>
-                        </div>
-                        <div class="qTwo">
-                            <input type="text" class="qTwo" id="qArabian"
-                                placeholder="Answer" />
-                        </div>
-                        <div class="qTwo">
-                            <button class="next">Next</button>
-                        </div>
-                    </div>
-                </div>
-        {/* <!-- third question --> */}
-                <div id="third">
-                    <div id="qThreeDiv">
-                        <div class="qThree">
-                            <h3>What is the capital city of France?</h3>
-                        </div>
-                        <div class="qThree">
-                            <input type="text" class="qThree" id="qHimalayan"
-                                placeholder="Answer" />
-                        </div>
-                        <div class="qThree">
-                            <button class="next">Next</button>
-                        </div>
-                    </div>
-                </div>
-        {/* <!-- fourth question --> */}
-                <div id="fourth">
-                    <div id="qFourDiv">
-                        <div class="qFour">
-                            <h3>What color are emeralds?</h3>
-                        </div>
-                        <div class="qFour">
-                            <input type="text" class="qFour" id="qEmerald"
-                                placeholder="Answer" />
-                        </div>
-                        <div class="qFour">
-                            <button class="next">Next</button>
-                        </div>
-                    </div>
-                </div>
-        {/* <!-- fifth question --> */}
-                <div id="fifth">
-                    <div id="qFiveDiv">
-                        <div class="qFive">
-                            <h3>How many days are in a leap year?</h3>
-                        </div>
-                        <div class="qFive">
-                            <input type="text" class="qFive" id="qLeap"
-                                placeholder="Answer" />
-                        </div>
-                        <div class="qFive">
-                            <button class="next">Next</button>
-                        </div>
-                    </div>
-                </div>
-        {/* <!-- score --> */}
-                <div id="score">
-                    <div id="scoreDiv">
-                        <div class="score">
-                            <h2>Your score is : </h2>
-                        </div>
-                        <b>
-                        <div class="score" id="scoress">
-                            
-                        </div>
-                        </b>
-                    </div>
-                </div>
-        {/* <!-- footer --> */}
-                <div id="footer">
-                    
-                </div>
+            <Details />
 
+            <First />
+
+            <Second />
+
+            <Third />
+
+            <Fourth />
+
+            <Fifth />
+
+            <Score />
+            
+            <Footer />
     </>
   )
 }
