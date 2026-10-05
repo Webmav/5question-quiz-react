@@ -1,19 +1,24 @@
 body {
-    font-family:'Times New Roman', Times, Serif;
-    display:flex;
-    background-color: rgb(151, 255, 255);
-    margin:0px;
-    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
 }
-#footer {
+
+nav {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 1500px;
-    height: 69px;
-    min-height: 69px;
-    min-width: 250px;
-    background-color:rgb(27, 27, 27);
+
+    min-height: 75px;
+    background-color: black;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    min-height: 75px;
+    background-color: black;
 }
 
 
@@ -21,24 +26,20 @@ div#details {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 1500px;
-    height: 650px;
+
     min-width: 250px;
+    padding: 5px;
 }
 div#nGSubmitDiv {
-    background-color: cyan;
     align-items: center;
-    width: 1500px;
-    height: 200px;
-    min-width: 200px;
-    padding: 10px 15px 10px 15px;
-    margin: 1px;
+    padding-inline: auto;
 }
 .nGSubmit {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 1px 1px 5px;
+    
+    padding: 5px 1px 1px 5px;
 }
 
 
@@ -46,24 +47,21 @@ div#first {
     display:flex;
     align-items: flex-start;
     justify-content: center;
-    width: 1500px;
-    height: 650px;
+
     min-width: 235px;
 }
 div#qOneDiv {
-    background-color: rgb(0, 235, 235);
     align-items: center;
-    width: 1500px;
-    height: 200px;
+
     min-width: 200px;
-    padding: 10px 15px 10px 15px;
-    margin: 1px;
+
+    padding: 1px;
 }
 .qOne {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 1px 1px 5px;
+    padding: 5px 1px 1px 5px;
 }
 
 
@@ -71,24 +69,21 @@ div#second {
     display:flex;
     align-items: flex-start;
     justify-content: center;
-    width: 1500px;
-    height: 650px;
+
     min-width: 235px;
 }
 div#qTwoDiv {
-    background-color: rgb(0, 235, 235);
     align-items: center;
-    width: 1500px;
-    height: 200px;
+
     min-width: 200px;
-    padding: 10px 15px 10px 15px;
-    margin: 1px;
+
+    padding: 1px;
 }
 .qTwo {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 1px 1px 5px;
+    padding: 5px 1px 1px 5px;
 }
 
 
@@ -96,24 +91,21 @@ div#third {
     display:flex;
     align-items: flex-start;
     justify-content: center;
-    width: 1500px;
-    height: 650px;
+
     min-width: 235px;
 }
 div#qThreeDiv {
-    background-color: rgb(0, 235, 235);
     align-items: center;
-    width: 1500px;
-    height: 200px;
+
     min-width: 200px;
-    padding: 10px 15px 10px 15px;
-    margin: 1px;
+
+    padding: 1px;
 }
 .qThree {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 1px 1px 5px;
+    padding: 5px 1px 1px 5px;
 }
 
 
@@ -121,24 +113,21 @@ div#fourth {
     display:flex;
     align-items: flex-start;
     justify-content: center;
-    width: 1500px;
-    height: 650px;
+
     min-width: 235px;
 }
 div#qFourDiv {
-    background-color: rgb(0, 235, 235);
     align-items: center;
-    width: 1500px;
-    height: 200px;
+
     min-width: 200px;
-    padding: 10px 15px 10px 15px;
-    margin: 1px;
+
+    padding: 1px;
 }
 .qFour {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 1px 1px 5px;
+    padding: 5px 1px 1px 5px;
 }
 
 
@@ -146,24 +135,21 @@ div#fifth {
     display:flex;
     align-items: flex-start;
     justify-content: center;
-    width: 1500px;
-    height: 650px;
+
     min-width: 235px;
 }
 div#qFiveDiv {
-    background-color: rgb(0, 235, 235);
     align-items: center;
-    width: 1500px;
-    height: 200px;
+
     min-width: 200px;
-    padding: 10px 15px 10px 15px;
-    margin: 1px;
+
+    padding: 1px;
 }
 .qFive {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 1px 1px 5px;
+    padding: 5px 1px 1px 5px;
 }
 
 
@@ -171,20 +157,41 @@ div#score {
     display:flex;
     align-items: flex-start;
     justify-content: center;
-    width: 1500px;
-    height: 650px;
+
     min-width: 235px;
 }
 div#scoreDiv {
-    background-color: rgb(0, 235, 235);
     align-items: center;
-    width: 1500px;
-    height: 200px;
+
     min-width: 200px;
 }
 .score {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 1px 1px 5px;
+    padding: 5px 1px 1px 5px;
+}
+
+
+
+/* utility classes */
+
+.hidden {
+    display: none !important;
+}
+
+
+
+
+/* details */
+
+.details-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px;
+}
+
+.details-wrapper > * {
+    align-self: center;
 }

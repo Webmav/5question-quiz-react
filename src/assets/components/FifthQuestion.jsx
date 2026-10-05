@@ -1,7 +1,7 @@
 export default function Fifth() {
     return(
         <>
-                <div id="fifth">
+                <div id="fifth" className="hidden">
                     <div id="qFiveDiv">
                         <div className="qFive">
                             <h3>How many days are in a leap year?</h3>

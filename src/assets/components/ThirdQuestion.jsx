@@ -2,7 +2,7 @@ export default function Third() {
     return(
         <>
         
-                <div id="third">
+                <div id="third" className="hidden">
                     <div id="qThreeDiv">
                         <div className="qThree">
                             <h3>What is the capital city of France?</h3>

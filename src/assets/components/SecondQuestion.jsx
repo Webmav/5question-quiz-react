@@ -2,7 +2,7 @@ export default function Second() {
     return(
         <>
         
-                <div id="second">
+                <div id="second" className="hidden">
                     <div id="qTwoDiv">
                         <div className="qTwo">
                             <h3>What is the largest planet in our solar system?</h3>

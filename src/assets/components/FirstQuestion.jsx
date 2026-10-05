@@ -2,7 +2,7 @@ export default function First(){
     return(
         <>
         
-                <div id="first">
+                <div id="first" className="hidden">
                     <div id="qOneDiv">
                         <div className="qOne">
                             <h3>What is the capital of India?</h3>

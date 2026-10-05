@@ -1,7 +1,7 @@
 export default function Fourth() {
     return(
         <>
-                <div id="fourth">
+                <div id="fourth" className="hidden">
                     <div id="qFourDiv">
                         <div className="qFour">
                             <h3>What color are emeralds?</h3>

@@ -1,7 +1,7 @@
 export default function Score() {
     return(
         <>
-                <div id="score">
+                <div id="score" className="hidden">
                     <div id="scoreDiv">
                         <div className="score">
                             <h2>Your score is : </h2>
